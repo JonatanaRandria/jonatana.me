@@ -1,23 +1,21 @@
-import NavItem from "./NavItems/index";
-import { navItems } from "./NavItems/Utils/NavItem";
-import ResumeButton from "./NavItems/Button"
-import "./Nav.css";
+import "./index.css";
+import { useState } from "react";
+import Nav from "./Nav";
+import MenuIcon from "./NavItems/MenuIcon";
+import Logo from "./NavItems/Logo";
 
-function Nav({ setClicked, clicked }) {
+function Header() {
+  const [clicked, setClicked] = useState(false);
+
   return (
-    <nav className={`Nav ${clicked ? "active" : ""}`}>
-      {navItems.map((item) => (
-        <NavItem
-          setClicked={setClicked}
-          clicked={clicked}
-          name={item.name}
-          link={item.link}
-        />
-      ))}
-      {/* <BlogButton /> */}
-      <ResumeButton />
-    </nav>
+    <header className="header">
+      <Logo clicked={clicked} setClicked={setClicked} />
+      <div className="header__menuIcon">
+        <MenuIcon clicked={clicked} setClicked={setClicked} />
+      </div>
+      <Nav setClicked={setClicked} clicked={clicked} />
+    </header>
   );
 }
 
-export default Nav;
+export default Header;

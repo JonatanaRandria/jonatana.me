@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ResumeButton.css";
 
-function ResumeButton() {
+export function ResumeButton() {
 
     // TODO : add CV link
   return (
@@ -17,4 +17,4 @@ function ResumeButton() {
   );
 }
 
-export default ResumeButton;
+
