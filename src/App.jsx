@@ -1,19 +1,16 @@
 import './App.css'
-import Header from './components/Navbar'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Landing from './pages/Landing';
 function App() {
 
 
   return (
     <>
-
     <Router>
         <Routes>
-          <Route path="/" element={ <Header/>}>
+          <Route path="/" element={ <Landing/>}>
           </Route>
         </Routes>
-          
-      
       </Router>
     </>
   )
