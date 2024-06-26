@@ -1,5 +1,5 @@
 import { NavHashLink } from "react-router-hash-link";
-import "./NavItem.css";
+import "./index.css";
 
 function NavItem({ clicked, setClicked, name, link }) {
   const isContact = name === "Contact";
