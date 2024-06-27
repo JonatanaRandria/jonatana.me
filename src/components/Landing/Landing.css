@@ -1,6 +1,6 @@
 .landing {
     font-family: "Fira Code", monospace;
-    height: 105vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
     background-color: rgb(238, 236, 236);
@@ -21,9 +21,15 @@
   .landing__topText {
     margin-bottom: 15px;
   }
+
+  .landing__descText{
+    font-size: 25px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--dark-gray);
+  }
   
   .landing__mainText {
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     color: var(--dark-gray);
   }
